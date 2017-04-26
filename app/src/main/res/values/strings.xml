@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Store</string>
+    <string-array name="pizza_type_array">
+        <item>italian</item>
+        <item>mexican</item>
+        <item>hawaiian</item>
+    </string-array>
+
+    <string-array name="pizza_size_array">
+        <item>small</item>
+        <item>medium</item>
+        <item>big</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:minHeight="72dp"
+    tools:context=".activites.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/menu_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pizza_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minHeight="72dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/pizza_label"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:text="PIZZA"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/pizza_type_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="2"
+                    android:layout_below="@+id/pizza_label"
+                    android:text="Type"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/pizza_type"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/pizza_label"
+                    android:layout_marginEnd="11dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"></Spinner>
+
+                <TextView
+                    android:id="@+id/pizza_size_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="2"
+                    android:text="Size"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/pizza_size"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/pizza_type"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"></Spinner>
+
+                <TextView
+                    android:id="@+id/pizza_quantity_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/pizza_size_label"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Quantity"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/pizza_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/pizza_size"
+                    android:layout_below="@id/pizza_size"
+                    android:layout_alignRight="@+id/pizza_quantity_label"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/soda_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minHeight="72dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/soda_label"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:text="DRINKS"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/soda_flavor_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="6dp"
+                    android:layout_below="@+id/soda_label"
+                    android:text="Flavor"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/soda_flavor"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/soda_label"
+                    android:layout_marginEnd="11dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"></Spinner>
+
+                <TextView
+                    android:id="@+id/soda_size_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:layout_weight="2"
+                    android:text="Size"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/soda_size"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/soda_flavor"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"></Spinner>
+
+                <TextView
+                    android:id="@+id/soda_quantity_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/soda_size_label"
+                    android:layout_weight="2"
+                    android:gravity="left"
+                    android:text="Quantity"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/soda_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/soda_size"
+                    android:layout_alignRight="@+id/soda_quantity_label"
+                    android:layout_below="@id/soda_size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/send_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_done_white"
+            app:layout_anchor="@id/menu_linear"
+            app:layout_anchorGravity="bottom|center|end"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
